@@ -1,0 +1,67 @@
+html,
+body {
+  height: 100%;                                   /* Body ka height pura screen ke barabar hoga */
+  margin: 0;                                      /* Body ke aas-paas ka default margin hata diya */
+  font-size: 16px;                                /* Font size set kiya */
+  font-family: "Lato", sans-serif;                /* Font style Lato rakha, agar na mile to sans-serif */
+  font-weight: 400;                               /* Normal weight rakha font ka */
+  line-height: 1.8em;                             /* Line ke beech thoda spacing diya readability ke liye */
+  color: #666;                                    /* Default text color grey rakha */
+}
+
+.pimg1 {
+  background-image: url(./image1.png);            /* Pehla background image set kiya */
+  min-height: 100%;                               /* Iska height screen ke height jitna rakha */
+}
+
+.pimg2 {
+  background-image: url(./image2\ \(1\).png);      /* Dusra background image */
+  min-height: 400px;                              /* Iska minimum height 400px rakha */
+}
+
+.pimg3 {
+  background-image: url(./image3\ \(1\).png);      /* Teesra background image */
+  min-height: 400px;                              /* Minimum height 400px */
+}
+
+.pimg1,
+.pimg2,
+.pimg3 {
+  position: relative;                             /* Child elements ko absolute position dene ke liye */
+  background-position: center;                    /* Image ko center align kiya background mein */
+  background-size: cover;                         /* Image ko container ke hisaab se adjust kiya */
+  background-repeat: no-repeat;                   /* Image repeat na ho */
+  background-attachment: fixed;                   /* Parallax effect: scroll par image fixed rahegi */
+}
+
+.ptext {
+  position: absolute;                             /* Text ko image ke upar place karne ke liye */
+  top: 50%;                                       /* Vertically center karne ke liye */
+  width: 100%;                                    /* Full width le raha text */
+  text-align: center;                             /* Text center aligned hai */
+  color: black;                                   /* Text color black */
+  font-size: 27px;                                /* Font size thoda bada rakha */
+  letter-spacing: 8px;                            /* Letters ke beech gap diya gaya hai */
+  text-transform: uppercase;                      /* Sabhi text uppercase mein dikhai denge */
+}
+
+.textBg {
+  background: #313534;                            /* Text ke piche ka dark background */
+  color: #fff;                                    /* Text color white */
+  padding: 20px;                                  /* Thoda andar space diya text ke charo taraf */
+}
+
+.section {
+  padding: 50px 80px;                             /* Section ke andar ka spacing set kiya */
+  text-align: center;                             /* Text ko center mein rakha */
+}
+
+.section-light {
+  background-color: #f4f4f4;                      /* Light section ka background */
+  color: #666;                                    /* Light section ka text color */
+}
+
+.section-dark {
+  background-color: #282e34;                      /* Dark section ka background */
+  color: #ddd;                                    /* Dark section ka text color */
+}
